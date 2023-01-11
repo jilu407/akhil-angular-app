@@ -13,5 +13,5 @@
         state: started
     - name: copy html file
       copy:
-        src: /var/lib/jenkins/workspace/ansible-angular-deploy/dist/akhil-app/*
-        dest: /var/www/html/*
+        src: /var/lib/jenkins/workspace/ansible-angular-deploy/dist/akhil-app/*.*
+        dest: /var/www/html/
