@@ -6,14 +6,14 @@ stage('install')
 {
 steps{
 echo "install the Project.........."
- /* sh "npm install" */
+sh "npm install"
 }
 }
 stage('build') 
 {
 steps{
 echo "build the Project.........."
-/* sh 'npm run build --prod' */
+ sh 'npm run build --prod'
 }
 }
 
