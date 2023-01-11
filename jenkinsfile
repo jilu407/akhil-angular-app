@@ -5,13 +5,13 @@ stages
 stage('install') 
 {
 steps{
- #sh "npm install"
+ /* sh "npm install" */
 }
 }
 stage('build') 
 {
 steps{
-#sh 'npm run build --prod'
+/* sh 'npm run build --prod' */
 }
 }
 
