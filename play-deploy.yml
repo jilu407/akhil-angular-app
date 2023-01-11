@@ -1,0 +1,17 @@
+---
+- hosts: all
+  become: yes
+  name: Deploy playbook
+  tasks:
+    - name: install httpd
+      yum:
+        name: httpd
+        state: latest
+    - name: start httpd
+      service:
+        name: httpd
+        state: started
+    - name: copy html file
+      copy:
+        src: /home/ec2-user/ansible-playbooks/index.html
+        dest: /var/www/html/index.html
